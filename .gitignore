@@ -1,0 +1,16 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+finadvisor.db
+finadvisor-test.db
+finadvisor-verification.db
+finadvisor-pdf-verification.db
+.env
+venv/
+__pycache__/
+node_modules/

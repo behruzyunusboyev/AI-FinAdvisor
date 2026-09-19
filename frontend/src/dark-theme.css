@@ -1,0 +1,95 @@
+/* One cohesive dark palette. These rules only alter colour, borders and shadows. */
+.app-shell { min-height: 100vh; background: var(--bg); color: var(--text-primary); }
+
+/* Header and brand keep their existing composition, with a dark surface. */
+.topbar { background: rgb(11 15 23 / 94%); border-bottom-color: var(--border); }
+.brand { color: var(--text-primary); }.brand-icon { background: var(--surface-2); color: var(--gold); box-shadow: none; }
+.brand small { color: var(--gold); }.topbar nav a { color: var(--text-secondary); }.topbar nav a:hover { background: var(--surface-2); color: var(--text-primary); }
+.topbar .nav-cta { background: var(--gold); color: var(--bg); box-shadow: none; }
+
+/* Base controls */
+.button, .ghost { background: var(--surface); border-color: var(--border); color: var(--text-primary); box-shadow: none; }
+.button:hover:not(:disabled) { box-shadow: none; }.primary { background: var(--surface-2); border-color: var(--border); color: var(--text-primary); }.primary:hover:not(:disabled) { background: #202A3D; }
+.gold { background: var(--gold); border-color: var(--gold); color: var(--bg); }.gold:hover:not(:disabled) { background: #F0B84F; }
+
+/* Shared card surfaces */
+.quick-stats article, .feature-grid article, .reference-card, .reference-metric, .gauge-card, .bank-analysis, .reference-charts article, .reference-tax, .reference-ai, .dashboard-copilot, .copilot { background: var(--surface); border: 1px solid var(--border); box-shadow: none; }
+.feature-grid article:hover, .reference-metric:hover { box-shadow: none; }
+.home, .create-page, .reference-dashboard, .empty { color: var(--text-primary); }
+
+/* Home */
+.hero-pill { background: rgb(224 166 63 / 13%); border-color: rgb(224 166 63 / 42%); color: var(--gold); }.hero-pill i { background: var(--gold); box-shadow: 0 0 0 4px rgb(224 166 63 / 13%); }
+.home h1 em, .eyebrow { color: var(--gold); }.home > p, .hero p, .quick-stats span, .feature-section header p, .feature-grid p { color: var(--text-secondary); }
+.quick-stats svg { background: var(--surface-2); color: var(--gold); }.feature-grid article > span { background: rgb(224 166 63 / 13%); color: var(--gold); }
+.home-cta { background: var(--surface-2); color: var(--text-primary); box-shadow: none; }.home-cta span { color: var(--gold); }.home-cta p { color: var(--text-secondary); }
+
+/* Wizard navigation and selectable cards */
+.back-link { color: var(--text-secondary); }.back-link:hover { color: var(--text-primary); }
+.wizard-title p, .step-header p, .reference-choice-grid small, .loan-switch small, .entity-list small { color: var(--text-secondary); }
+.wizard-title > b, .choice-icon, .soft-summary { background: var(--surface-2); color: var(--text-primary); }
+.reference-progress > div { color: var(--text-secondary); }.reference-progress > div:not(:first-child):before { background: var(--border); }
+.reference-progress span { background: var(--surface); border-color: var(--border); }.reference-progress .active, .reference-progress .done { color: var(--gold); }.reference-progress .active span { border-color: var(--gold); box-shadow: none; }.reference-progress .done span { background: var(--gold); border-color: var(--gold); color: var(--bg); }.reference-progress .done:before { background: var(--gold); }
+.step-header > span { background: var(--surface-2); color: var(--gold); }
+.reference-choice-grid > button, .quick-buttons button, .entity-list button { background: var(--surface); border-color: var(--border); color: var(--text-primary); box-shadow: none; }
+.reference-choice-grid > button:hover, .quick-buttons button:hover, .entity-list button:hover { border-color: #56617A; }.reference-choice-grid > button.selected, .quick-buttons button.selected, .entity-list button.selected { background: rgb(224 166 63 / 13%); border-color: var(--gold); color: var(--text-primary); box-shadow: none; }
+.selected .choice-icon { background: var(--gold); color: var(--bg); }.check, .range-row b { color: var(--gold); }
+
+/* Wizard data entry */
+.capital-display { background: var(--surface-2); color: var(--text-primary); }.capital-display span { color: var(--gold); }
+.input-label, .range-row label { color: var(--text-primary); }.input-label input, .counter input { background: var(--surface-2); border-color: var(--border); color: var(--text-primary); caret-color: var(--gold); }
+.input-label input:focus, .counter input:focus { border-color: var(--gold); outline: 0; box-shadow: 0 0 0 3px rgb(224 166 63 / 15%); }
+.finance-range { accent-color: var(--gold); }.loan-switch { background: var(--surface-2); border-color: var(--border); color: var(--text-primary); }.loan-switch button { background: var(--border); }.loan-switch button.on { background: var(--gold); }.loan-switch button i { background: var(--text-primary); box-shadow: none; }
+.counter button { background: var(--surface); border-color: var(--border); color: var(--text-primary); }.soft-summary { color: var(--text-secondary); }.soft-summary b { color: var(--text-primary); }.entity-list button > i { border-color: var(--text-secondary); }.entity-list button.selected > i { border-color: var(--gold); }
+
+/* Dashboard */
+.result-top p, .reference-metric header small, .reference-metric dl div, .gauge-card h3, .svg-gauge span, .bank-analysis > small, .reference-charts p, .reference-tax header p, .reference-ai header p, .tax-choice small, .tax-choice em { color: var(--text-secondary); }
+.reference-metric dl { border-color: var(--border); }.reference-metric dd { color: var(--text-primary); }.reference-metric header > span.ink { background: var(--surface-2); color: var(--gold); }.reference-metric header > span.gold { background: var(--gold); color: var(--bg); }.reference-metric header > span.sage { background: var(--sage); color: var(--bg); }
+.svg-gauge circle { stroke: var(--border); }.svg-gauge .gauge-value { stroke: var(--gold); }.gauge-card > span { background: rgb(224 166 63 / 13%); color: var(--gold); }
+.bank-analysis > div, .ai-summary { background: var(--surface-2); }.bank-analysis > div span, .bank-analysis aside p, .ai-summary { color: var(--text-secondary); }.bank-analysis > div b { background: rgb(74 222 128 / 15%); color: var(--sage); }.bank-analysis aside { background: rgb(224 166 63 / 13%); border-color: rgb(224 166 63 / 42%); color: var(--gold); }
+.reference-tax header > span { background: var(--surface-2); color: var(--gold); }.reference-ai header > span { background: var(--gold); color: var(--bg); }
+.tax-choice { background: var(--surface); border-color: var(--border); }.tax-choice.recommended { background: rgb(74 222 128 / 13%); border-color: var(--sage); }.tax-choice.recommended > span { background: var(--sage); color: var(--bg); }.reference-tax > aside { background: rgb(74 222 128 / 13%); color: var(--sage); }
+.reference-swot { background: var(--surface-2); }.reference-swot.strengths { background: rgb(74 222 128 / 13%); border-color: rgb(74 222 128 / 42%); color: var(--sage); }.reference-swot.weaknesses { background: rgb(224 166 63 / 13%); border-color: rgb(224 166 63 / 42%); color: var(--gold); }.reference-swot.opportunities { background: rgb(96 165 250 / 13%); border-color: rgb(96 165 250 / 42%); color: #93C5FD; }.reference-swot.threats { background: rgb(242 107 94 / 13%); border-color: rgb(242 107 94 / 42%); color: var(--rust); }.reference-swot li { color: var(--text-primary); }
+
+/* Secondary forms and global separators */
+.field input, .field select, .copilot input { background: var(--surface-2); border-color: var(--border); color: var(--text-primary); }.field input:focus, .field select:focus, .copilot input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgb(224 166 63 / 15%); }.field > span, .copilot label { color: var(--text-primary); }
+.copilot-result { background: rgb(224 166 63 / 13%); border-color: rgb(224 166 63 / 42%); }.copilot-result b { color: var(--sage); }.copilot-result span, .copilot-result p { color: var(--text-secondary); }
+.form-error { background: rgb(242 107 94 / 13%); border: 1px solid rgb(242 107 94 / 42%); color: var(--rust); }.error { color: var(--rust); }
+footer { border-color: var(--border); color: var(--text-secondary); }
+
+/* The six-step wizard has its own complete surface system. */
+.reference-wizard { color: var(--text-primary); color-scheme: dark; }
+.wizard-title h2, .step-header h1 { color: var(--text-primary); }.wizard-title p, .step-header p { color: var(--text-secondary); }
+.wizard-title > b { background: var(--surface-2); border: 1px solid var(--border); color: var(--text-primary); }
+.reference-card { background: var(--surface); border: 1px solid var(--border); box-shadow: none; }
+.reference-progress > div { color: var(--text-secondary); }.reference-progress > div:not(:first-child)::before { background: var(--border); }
+.reference-progress > div > span { background: var(--surface); border-color: var(--border); color: var(--text-secondary); }
+.reference-progress > div.active, .reference-progress > div.done { color: var(--gold); }.reference-progress > div.active > span { background: rgb(224 166 63 / 12%); border-color: var(--gold); color: var(--gold); }.reference-progress > div.done > span { background: var(--gold); border-color: var(--gold); color: var(--bg); }.reference-progress > div.done::before { background: var(--gold); }
+.step-header > span { background: rgb(224 166 63 / 12%); color: var(--gold); }
+.reference-choice-grid > button { background: var(--surface-2); border-color: var(--border); color: var(--text-primary); }
+.reference-choice-grid > button:hover { background: #202A3D; border-color: #56617A; transform: none; }.reference-choice-grid > button.selected { background: rgb(224 166 63 / 12%); border-color: var(--gold); color: var(--text-primary); }
+.reference-choice-grid > button small { color: var(--text-secondary); }.choice-icon { background: var(--bg); color: var(--text-secondary); }.reference-choice-grid > button.selected .choice-icon { background: var(--gold); color: var(--bg); }.business-emoji { filter: saturate(.9); }.check { color: var(--gold); }
+.capital-display { background: var(--surface-2); border: 1px solid var(--border); }.capital-display span { color: var(--gold); }.capital-display b { color: var(--text-primary); }
+.quick-buttons button { background: var(--surface-2); border-color: var(--border); color: var(--text-primary); }.quick-buttons button:hover { background: #202A3D; border-color: #56617A; }.quick-buttons button.selected { background: rgb(224 166 63 / 12%); border-color: var(--gold); color: var(--gold); }
+.input-label { color: var(--text-primary); }.input-label input, .counter input { background: var(--bg); border-color: var(--border); color: var(--text-primary); }.input-label input:hover, .counter input:hover { border-color: #56617A; }.input-label input:focus, .counter input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgb(224 166 63 / 15%); }
+.loan-switch { background: var(--surface-2); border-color: var(--border); }.loan-switch b { color: var(--text-primary); }.loan-switch small { color: var(--text-secondary); }.loan-switch button { background: var(--border); }.loan-switch button.on { background: var(--gold); }.loan-switch button i { background: var(--text-primary); box-shadow: none; }
+.range-row label { color: var(--text-primary); }.range-row b { color: var(--gold); }.finance-range { accent-color: var(--gold); }
+.counter button { background: var(--surface-2); border-color: var(--border); color: var(--text-primary); }.counter button:hover { background: #202A3D; border-color: #56617A; }
+.soft-summary { background: var(--surface-2); border: 1px solid var(--border); color: var(--text-secondary); }.soft-summary b { color: var(--text-primary); }
+.entity-list button { background: var(--surface-2); border-color: var(--border); color: var(--text-primary); }.entity-list button:hover { background: #202A3D; border-color: #56617A; }.entity-list button.selected { background: rgb(224 166 63 / 12%); border-color: var(--gold); }.entity-list button > i { border-color: var(--text-secondary); }.entity-list button.selected > i { border-color: var(--gold); }.entity-list small { color: var(--text-secondary); }
+.wizard-nav { border-top: 1px solid var(--border); }.wizard-nav .button { background: var(--surface-2); border-color: var(--border); color: var(--text-primary); }.wizard-nav .button.primary { background: var(--gold); border-color: var(--gold); color: var(--bg); }.wizard-nav .button.primary:disabled { background: var(--surface-2); border-color: var(--border); color: var(--text-secondary); opacity: 1; }
+
+/* Idea comparison: every surface remains in the same dark system. */
+.compare-page { color: var(--text-primary); }.compare-header p, .compare-results-header span { color: var(--text-secondary); }
+.compare-card, .compare-results-panel, .compare-summary-card { background: var(--surface); border-color: var(--border); box-shadow: none; }
+.compare-metric-card { background: var(--surface-2); border-color: var(--border); }.compare-side { background: var(--surface); border-color: var(--border); }.compare-side small, .compare-side em, .compare-summary-block p { color: var(--text-secondary); }
+.compare-metric-header .winner { background: rgb(74 222 128 / 14%); color: var(--sage); }.compare-metric-header .neutral { background: var(--surface); color: var(--text-secondary); }
+.compare-summary-card header span { color: var(--gold); }.compare-swot-card { background: var(--surface-2); border-color: var(--border); }.compare-swot-card ul { color: var(--text-primary); }
+.compare-swot-card.strengths { background: rgb(74 222 128 / 13%); border-color: rgb(74 222 128 / 42%); color: var(--sage); }.compare-swot-card.weaknesses { background: rgb(224 166 63 / 13%); border-color: rgb(224 166 63 / 42%); color: var(--gold); }.compare-swot-card.opportunities { background: rgb(96 165 250 / 13%); border-color: rgb(96 165 250 / 42%); color: #93C5FD; }.compare-swot-card.threats { background: rgb(242 107 94 / 13%); border-color: rgb(242 107 94 / 42%); color: var(--rust); }
+.button.light { background: var(--surface); border-color: var(--border); color: var(--text-primary); }
+.compare-submit-wrap { display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 26px auto 0; padding: 20px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); text-align: center; }
+.compare-submit-wrap p { margin: 0; color: var(--text-secondary); }.compare-submit { min-width: 270px; }.compare-submit:disabled { background: var(--surface-2); border-color: var(--border); color: var(--text-secondary); opacity: 1; }
+.metric-explainer { margin: -2px 0 14px; color: var(--text-secondary); font-size: 12px; line-height: 1.6; }.metric-explainer b { color: var(--text-primary); }
+.compare-request-status { margin: 14px 4px 2px; color: var(--text-secondary); font-size: 12px; font-weight: 700; }.compare-request-status.loading { color: var(--gold); }.compare-request-status.success { color: var(--sage); }.compare-request-status.error { color: var(--rust); }
+.compare-metrics-grid { align-items: stretch; }.compare-metric-card { display: flex; flex-direction: column; }.compare-metric-columns { flex: 1; }.compare-side { min-height: 112px; }.compare-side.is-better { border-color: rgb(74 222 128 / 58%); background: rgb(74 222 128 / 10%); }.compare-better { display: inline-flex; align-self: flex-start; margin-top: auto; padding: 4px 7px; border-radius: 999px; background: rgb(74 222 128 / 16%); color: var(--sage); font-size: 10px; font-weight: 800; }.compare-tax-card { margin-top: 16px; }
+.compare-summary-grid { align-items: stretch; }.compare-summary-card { display: flex; flex-direction: column; height: 100%; }.compare-summary-card > header { min-height: 30px; }.compare-summary-block { display: flex; flex-direction: column; }.compare-summary-block:first-of-type { min-height: 168px; }.compare-summary-block p { flex: 1; }.compare-summary-block:last-child { flex: 1; }.compare-swot-grid { flex: 1; align-items: stretch; }.compare-swot-card { display: flex; flex-direction: column; min-height: 124px; }.compare-swot-card ul { flex: 1; }
+@media(max-width:980px){.compare-summary-block:first-of-type{min-height:auto}.compare-swot-card{min-height:auto}}
